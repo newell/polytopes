@@ -1,0 +1,120 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title	"decagonal antiprism"
+    info	"Copyright (c) 2021 Newell Jensen. All rights reserved. Released under Apache 2.0 license as described in the file LICENSE."
+}
+Background {
+    skyColor	0.2 0.5 1
+}
+NavigationInfo {
+    type	[ "EXAMINE", "ANY" ]
+}
+Collision {
+    collide FALSE
+    children [
+	Group {
+	    children [
+		DirectionalLight {
+		    intensity	0.75
+		    direction	-0.5 -1 0
+		},
+		DirectionalLight {
+		    intensity	0.75
+		    direction	0.5 1 0
+		},
+		Group {
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.9 0.3 0.3
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%1 Coordinate {
+					    point	[ 0 0 1.0478,
+							      0.597192 0 0.860958,
+							      0.269367 0.532991 0.860958,
+							      -0.354192 0.480818 0.860958,
+							      -0.588888 -0.0992386 0.860958,
+							      0.974579 -0.0992386 0.371798,
+							      0.781734 0.480818 0.505562,
+							      -0.850765 0.344228 0.505562,
+							      -0.944538 -0.25981 0.371798,
+							      0.988014 -0.25981 -0.232838,
+							      0.987202 0.344228 -0.0694801,
+							      -1.03068 0.175393 -0.0694801,
+							      -0.931103 -0.420382 -0.232838,
+							      0.632365 -0.420382 -0.721998,
+							      0.807289 0.175393 -0.644523,
+							      -0.82521 0.0388024 -0.644523,
+							      -0.553715 -0.51962 -0.721998,
+							      0.0434763 -0.51962 -0.908841,
+							      0.310716 0.0388024 -0.999919,
+							      -0.312844 -0.0133704 -0.999919 ]
+					}
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 1, 2, -1, 0, 2, 3, -1,
+						      0, 3, 4, -1, 1, 5, 6, -1,
+						      1, 6, 2, -1, 3, 7, 4, -1,
+						      4, 7, 8, -1, 5, 9, 10, -1,
+						      5, 10, 6, -1, 7, 11, 8, -1,
+						      8, 11, 12, -1, 9, 13, 14, -1,
+						      9, 14, 10, -1, 11, 15, 12, -1,
+						      12, 15, 16, -1, 13, 17, 18, -1,
+						      13, 18, 14, -1, 15, 19, 16, -1,
+						      16, 19, 17, -1, 17, 19, 18, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	1 0.6 0.2
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord USE _v2%1
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 4, 8, 12, 16, 17, 13, 9,
+						      5, 1, -1, 2, 6, 10, 14, 18,
+						      19, 15, 11, 7, 3, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0 0 0
+					}
+				}
+			    geometry
+				IndexedLineSet {
+				    coord USE _v2%1
+				    coordIndex	[ 0, 2, -1, 0, 3, -1, 1, 2,
+						      -1, 1, 6, -1, 3, 4, -1, 4,
+						      7, -1, 5, 6, -1, 5, 10, -1,
+						      7, 8, -1, 8, 11, -1, 9, 10,
+						      -1, 9, 14, -1, 11, 12, -1, 12,
+						      15, -1, 13, 14, -1, 13, 18, -1,
+						      15, 16, -1, 16, 19, -1, 17, 18,
+						      -1, 17, 19, -1 ]
+				}
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+

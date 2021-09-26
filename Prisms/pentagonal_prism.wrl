@@ -1,0 +1,97 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title	"pentagonal prism"
+    info	"Copyright (c) 2021 Newell Jensen. All rights reserved. Released under Apache 2.0 license as described in the file LICENSE."
+}
+Background {
+    skyColor	0.2 0.5 1
+}
+NavigationInfo {
+    type	[ "EXAMINE", "ANY" ]
+}
+Collision {
+    collide FALSE
+    children [
+	Group {
+	    children [
+		DirectionalLight {
+		    intensity	0.75
+		    direction	-0.5 -1 0
+		},
+		DirectionalLight {
+		    intensity	0.75
+		    direction	0.5 1 0
+		},
+		Group {
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.4 0.4 1
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%1 Coordinate {
+					    point	[ 0 0 1.15995,
+							      1.01346 0 0.564254,
+							      -0.350143 0.951056 0.564254,
+							      -0.771521 -0.657164 0.564254,
+							      0.663321 0.951056 -0.0314448,
+							      0.868298 -0.657164 -0.399607,
+							      -1.12166 0.293893 -0.0314448,
+							      -0.234883 -1.06331 -0.399607,
+							      0.518155 0.293893 -0.995306,
+							      -0.585026 -0.112257 -0.995306 ]
+					}
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 1, 4, 2, -1, 0, 2, 6,
+						      3, -1, 1, 5, 8, 4, -1, 3,
+						      6, 9, 7, -1, 5, 7, 9, 8,
+						      -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.2 0.9 0.3
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord USE _v2%1
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 3, 7, 5, 1, -1, 2, 4,
+						      8, 9, 6, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0 0 0
+					}
+				}
+			    geometry
+				IndexedLineSet {
+				    coord USE _v2%1
+				    coordIndex	[ 0, 2, -1, 1, 4, -1, 3, 6,
+						      -1, 5, 8, -1, 7, 9, -1 ]
+				}
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+

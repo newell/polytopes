@@ -1,0 +1,105 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title	"great triambic icosidodecahedron"
+    info	"Copyright (c) 2021 Newell Jensen. All rights reserved. Released under Apache 2.0 license as described in the file LICENSE."
+}
+Background {
+    skyColor	0.2 0.5 1
+}
+NavigationInfo {
+    type	[ "EXAMINE", "ANY" ]
+}
+Collision {
+    collide FALSE
+    children [
+	Group {
+	    children [
+		DirectionalLight {
+		    intensity	0.75
+		    direction	-0.5 -1 0
+		},
+		DirectionalLight {
+		    intensity	0.75
+		    direction	0.5 1 0
+		},
+		Group {
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.9 0.3 0.3
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%1 Coordinate {
+					    point	[ 0 0 1.22475,
+							      1.1547 0 0.408248,
+							      0.288675 1.11803 0.408248,
+							      -0.57735 -1 0.408248,
+							      0.823908 -0.809017 0.408248,
+							      -0.57735 1 0.408248,
+							      -1.11258 -0.309017 0.408248,
+							      0.57735 -1 -0.408248,
+							      0.110264 -0.809017 0.912871,
+							      0.57735 1 -0.408248,
+							      0.755761 -0.309017 -0.912871,
+							      -0.110264 0.809017 -0.912871,
+							      1.11258 0.309017 -0.408248,
+							      -0.755761 0.309017 0.912871,
+							      -0.823908 0.809017 -0.408248,
+							      -1.1547 0 -0.408248,
+							      -0.645497 -0.5 -0.912871,
+							      -0.288675 -1.11803 -0.408248,
+							      0.645497 0.5 0.912871,
+							      0 0 -1.22475 ]
+					}
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 1, 2, -1, 0, 3, 4, -1,
+						      0, 5, 6, -1, 1, 10, 9, -1,
+						      1, 8, 7, -1, 2, 14, 13, -1,
+						      2, 12, 11, -1, 3, 16, 7, -1,
+						      3, 13, 15, -1, 4, 12, 18, -1,
+						      4, 17, 10, -1, 5, 11, 15, -1,
+						      5, 18, 9, -1, 6, 17, 8, -1,
+						      6, 14, 16, -1, 7, 19, 12, -1,
+						      8, 18, 13, -1, 9, 19, 14, -1,
+						      10, 16, 11, -1, 15, 19, 17, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.2 0.9 0.3
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord USE _v2%1
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 2, 11, 16, 3, -1, 0, 4,
+						      10, 11, 5, -1, 0, 6, 16, 10,
+						      1, -1, 1, 9, 14, 6, 8, -1,
+						      1, 7, 16, 14, 2, -1, 2, 13,
+						      3, 7, 12, -1, 3, 15, 11, 12,
+						      4, -1, 4, 18, 5, 15, 17, -1,
+						      5, 9, 10, 17, 6, -1, 7, 8,
+						      13, 14, 19, -1, 8, 17, 19, 9,
+						      18, -1, 12, 19, 15, 13, 18, -1 ]
+				}
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+

@@ -1,0 +1,76 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title	"tetrahemihexahedron"
+    info	"Copyright (c) 2021 Newell Jensen. All rights reserved. Released under Apache 2.0 license as described in the file LICENSE."
+}
+Background {
+    skyColor	0.2 0.5 1
+}
+NavigationInfo {
+    type	[ "EXAMINE", "ANY" ]
+}
+Collision {
+    collide FALSE
+    children [
+	Group {
+	    children [
+		DirectionalLight {
+		    intensity	0.75
+		    direction	-0.5 -1 0
+		},
+		DirectionalLight {
+		    intensity	0.75
+		    direction	0.5 1 0
+		},
+		Group {
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.9 0.3 0.3
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%1 Coordinate {
+					    point	[ 0 0 1.41421,
+							      1.41421 0 0,
+							      -1.41421 0 0,
+							      0 1.41421 0,
+							      0 -1.41421 0,
+							      0 0 -1.41421 ]
+					}
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 3, 2, 0, -1, 0, 4, 1, -1,
+						      5, 3, 1, -1, 2, 5, 4, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.4 0.4 1
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord USE _v2%1
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 1, 5, 2, -1, 0, 3, 5,
+						      4, -1, 1, 4, 2, 3, -1 ]
+				}
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+

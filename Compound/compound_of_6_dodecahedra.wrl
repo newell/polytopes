@@ -1,0 +1,396 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title	"compound of 6 dodecahedra"
+    info	"Copyright (c) 2021 Newell Jensen. All rights reserved. Released under Apache 2.0 license as described in the file LICENSE."
+}
+Background {
+    skyColor	0.2 0.5 1
+}
+NavigationInfo {
+    type	[ "EXAMINE", "ANY" ]
+}
+Collision {
+    collide FALSE
+    children [
+	Group {
+	    children [
+		DirectionalLight {
+		    intensity	0.75
+		    direction	-0.5 -1 0
+		},
+		DirectionalLight {
+		    intensity	0.75
+		    direction	0.5 1 0
+		},
+		DEF hedron0 Transform {
+		    rotation	0 0.900053 0.556263  -0.628319
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					DEF _v2%1 Material {
+					    diffuseColor	0.2 1 0.2
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%0 Coordinate {
+					    point	[ 0.556263 0.556263 0.556263,
+							      0.556263 0.556263 -0.556263,
+							      0.556263 -0.556263 -0.556263,
+							      0.556263 -0.556263 0.556263,
+							      -0.556263 -0.556263 0.556263,
+							      -0.556263 -0.556263 -0.556263,
+							      -0.556263 0.556263 -0.556263,
+							      -0.556263 0.556263 0.556263,
+							      0 0.343789 0.900053,
+							      0 0.343789 -0.900053,
+							      0 -0.343789 -0.900053,
+							      0 -0.343789 0.900053,
+							      0.900053 0 0.343789,
+							      0.900053 0 -0.343789,
+							      -0.900053 0 -0.343789,
+							      -0.900053 0 0.343789,
+							      0.343789 0.900053 0,
+							      0.343789 -0.900053 0,
+							      -0.343789 -0.900053 0,
+							      -0.343789 0.900053 0 ]
+					}
+				    solid	FALSE
+				    creaseAngle	0.5
+				    coordIndex	[ 7, 8, 0, 16, 19, -1, 19, 16,
+						      1, 9, 6, -1, 8, 11, 3, 12,
+						      0, -1, 1, 16, 0, 12, 13, -1,
+						      12, 3, 17, 2, 13, -1, 1, 13,
+						      2, 10, 9, -1, 11, 8, 7, 15,
+						      4, -1, 15, 7, 19, 6, 14, -1,
+						      15, 14, 5, 18, 4, -1, 5, 14,
+						      6, 9, 10, -1, 3, 11, 4, 18,
+						      17, -1, 17, 18, 5, 10, 2, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					DEF _v2%2 Material {
+					    diffuseColor	0 0 0
+					}
+				}
+			    geometry
+				IndexedLineSet {
+				    coord USE _v2%0
+				    coordIndex	[ 7, 8, -1, 8, 0, -1, 0, 16,
+						      -1, 16, 19, -1, 19, 7, -1, 16,
+						      1, -1, 1, 9, -1, 9, 6, -1,
+						      6, 19, -1, 8, 11, -1, 11, 3,
+						      -1, 3, 12, -1, 12, 0, -1, 12,
+						      13, -1, 13, 1, -1, 3, 17, -1,
+						      17, 2, -1, 2, 13, -1, 2, 10,
+						      -1, 10, 9, -1, 7, 15, -1, 15,
+						      4, -1, 4, 11, -1, 6, 14, -1,
+						      14, 15, -1, 14, 5, -1, 5, 18,
+						      -1, 18, 4, -1, 10, 5, -1, 18,
+						      17, -1 ]
+				}
+			}
+		    ]
+		},
+		Transform {
+		    rotation	0 0.900053 -0.556263  0.628319
+		    children [
+			Transform {
+			    rotation	0 0.900053 0.556263  0.628319
+			    children [
+				Transform {
+				    rotation	0 0.900053 0.556263  -0.628319
+				    children [
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%1
+						}
+					    geometry
+						IndexedFaceSet {
+						    coord USE _v2%0
+						    solid	FALSE
+						    creaseAngle	0.5
+						    coordIndex	[ 7, 8, 0, 16, 19, -1, 19, 16,
+								      1, 9, 6, -1, 8, 11, 3, 12,
+								      0, -1, 1, 16, 0, 12, 13, -1,
+								      12, 3, 17, 2, 13, -1, 1, 13,
+								      2, 10, 9, -1, 11, 8, 7, 15,
+								      4, -1, 15, 7, 19, 6, 14, -1,
+								      15, 14, 5, 18, 4, -1, 5, 14,
+								      6, 9, 10, -1, 3, 11, 4, 18,
+								      17, -1, 17, 18, 5, 10, 2, -1 ]
+						}
+					},
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%2
+						}
+					    geometry
+						IndexedLineSet {
+						    coord USE _v2%0
+						    coordIndex	[ 7, 8, -1, 8, 0, -1, 0, 16,
+								      -1, 16, 19, -1, 19, 7, -1, 16,
+								      1, -1, 1, 9, -1, 9, 6, -1,
+								      6, 19, -1, 8, 11, -1, 11, 3,
+								      -1, 3, 12, -1, 12, 0, -1, 12,
+								      13, -1, 13, 1, -1, 3, 17, -1,
+								      17, 2, -1, 2, 13, -1, 2, 10,
+								      -1, 10, 9, -1, 7, 15, -1, 15,
+								      4, -1, 4, 11, -1, 6, 14, -1,
+								      14, 15, -1, 14, 5, -1, 5, 18,
+								      -1, 18, 4, -1, 10, 5, -1, 18,
+								      17, -1 ]
+						}
+					}
+				    ]
+				}
+			    ]
+			}
+		    ]
+		},
+		Transform {
+		    rotation	0.556263 0 0.900053  0.628319
+		    children [
+			Transform {
+			    rotation	0 0.900053 0.556263  0.628319
+			    children [
+				Transform {
+				    rotation	0 0.900053 0.556263  -0.628319
+				    children [
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%1
+						}
+					    geometry
+						IndexedFaceSet {
+						    coord USE _v2%0
+						    solid	FALSE
+						    creaseAngle	0.5
+						    coordIndex	[ 7, 8, 0, 16, 19, -1, 19, 16,
+								      1, 9, 6, -1, 8, 11, 3, 12,
+								      0, -1, 1, 16, 0, 12, 13, -1,
+								      12, 3, 17, 2, 13, -1, 1, 13,
+								      2, 10, 9, -1, 11, 8, 7, 15,
+								      4, -1, 15, 7, 19, 6, 14, -1,
+								      15, 14, 5, 18, 4, -1, 5, 14,
+								      6, 9, 10, -1, 3, 11, 4, 18,
+								      17, -1, 17, 18, 5, 10, 2, -1 ]
+						}
+					},
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%2
+						}
+					    geometry
+						IndexedLineSet {
+						    coord USE _v2%0
+						    coordIndex	[ 7, 8, -1, 8, 0, -1, 0, 16,
+								      -1, 16, 19, -1, 19, 7, -1, 16,
+								      1, -1, 1, 9, -1, 9, 6, -1,
+								      6, 19, -1, 8, 11, -1, 11, 3,
+								      -1, 3, 12, -1, 12, 0, -1, 12,
+								      13, -1, 13, 1, -1, 3, 17, -1,
+								      17, 2, -1, 2, 13, -1, 2, 10,
+								      -1, 10, 9, -1, 7, 15, -1, 15,
+								      4, -1, 4, 11, -1, 6, 14, -1,
+								      14, 15, -1, 14, 5, -1, 5, 18,
+								      -1, 18, 4, -1, 10, 5, -1, 18,
+								      17, -1 ]
+						}
+					}
+				    ]
+				}
+			    ]
+			}
+		    ]
+		},
+		Transform {
+		    rotation	0.900053 0.556263 0  0.628319
+		    children [
+			Transform {
+			    rotation	0 0.900053 0.556263  0.628319
+			    children [
+				Transform {
+				    rotation	0 0.900053 0.556263  -0.628319
+				    children [
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%1
+						}
+					    geometry
+						IndexedFaceSet {
+						    coord USE _v2%0
+						    solid	FALSE
+						    creaseAngle	0.5
+						    coordIndex	[ 7, 8, 0, 16, 19, -1, 19, 16,
+								      1, 9, 6, -1, 8, 11, 3, 12,
+								      0, -1, 1, 16, 0, 12, 13, -1,
+								      12, 3, 17, 2, 13, -1, 1, 13,
+								      2, 10, 9, -1, 11, 8, 7, 15,
+								      4, -1, 15, 7, 19, 6, 14, -1,
+								      15, 14, 5, 18, 4, -1, 5, 14,
+								      6, 9, 10, -1, 3, 11, 4, 18,
+								      17, -1, 17, 18, 5, 10, 2, -1 ]
+						}
+					},
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%2
+						}
+					    geometry
+						IndexedLineSet {
+						    coord USE _v2%0
+						    coordIndex	[ 7, 8, -1, 8, 0, -1, 0, 16,
+								      -1, 16, 19, -1, 19, 7, -1, 16,
+								      1, -1, 1, 9, -1, 9, 6, -1,
+								      6, 19, -1, 8, 11, -1, 11, 3,
+								      -1, 3, 12, -1, 12, 0, -1, 12,
+								      13, -1, 13, 1, -1, 3, 17, -1,
+								      17, 2, -1, 2, 13, -1, 2, 10,
+								      -1, 10, 9, -1, 7, 15, -1, 15,
+								      4, -1, 4, 11, -1, 6, 14, -1,
+								      14, 15, -1, 14, 5, -1, 5, 18,
+								      -1, 18, 4, -1, 10, 5, -1, 18,
+								      17, -1 ]
+						}
+					}
+				    ]
+				}
+			    ]
+			}
+		    ]
+		},
+		Transform {
+		    rotation	0.900053 -0.556263 0  0.628319
+		    children [
+			Transform {
+			    rotation	0 0.900053 0.556263  0.628319
+			    children [
+				Transform {
+				    rotation	0 0.900053 0.556263  -0.628319
+				    children [
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%1
+						}
+					    geometry
+						IndexedFaceSet {
+						    coord USE _v2%0
+						    solid	FALSE
+						    creaseAngle	0.5
+						    coordIndex	[ 7, 8, 0, 16, 19, -1, 19, 16,
+								      1, 9, 6, -1, 8, 11, 3, 12,
+								      0, -1, 1, 16, 0, 12, 13, -1,
+								      12, 3, 17, 2, 13, -1, 1, 13,
+								      2, 10, 9, -1, 11, 8, 7, 15,
+								      4, -1, 15, 7, 19, 6, 14, -1,
+								      15, 14, 5, 18, 4, -1, 5, 14,
+								      6, 9, 10, -1, 3, 11, 4, 18,
+								      17, -1, 17, 18, 5, 10, 2, -1 ]
+						}
+					},
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%2
+						}
+					    geometry
+						IndexedLineSet {
+						    coord USE _v2%0
+						    coordIndex	[ 7, 8, -1, 8, 0, -1, 0, 16,
+								      -1, 16, 19, -1, 19, 7, -1, 16,
+								      1, -1, 1, 9, -1, 9, 6, -1,
+								      6, 19, -1, 8, 11, -1, 11, 3,
+								      -1, 3, 12, -1, 12, 0, -1, 12,
+								      13, -1, 13, 1, -1, 3, 17, -1,
+								      17, 2, -1, 2, 13, -1, 2, 10,
+								      -1, 10, 9, -1, 7, 15, -1, 15,
+								      4, -1, 4, 11, -1, 6, 14, -1,
+								      14, 15, -1, 14, 5, -1, 5, 18,
+								      -1, 18, 4, -1, 10, 5, -1, 18,
+								      17, -1 ]
+						}
+					}
+				    ]
+				}
+			    ]
+			}
+		    ]
+		},
+		Transform {
+		    rotation	0.556263 0 -0.900053  0.628319
+		    children [
+			Transform {
+			    rotation	0 0.900053 0.556263  0.628319
+			    children [
+				Transform {
+				    rotation	0 0.900053 0.556263  -0.628319
+				    children [
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%1
+						}
+					    geometry
+						IndexedFaceSet {
+						    coord USE _v2%0
+						    solid	FALSE
+						    creaseAngle	0.5
+						    coordIndex	[ 7, 8, 0, 16, 19, -1, 19, 16,
+								      1, 9, 6, -1, 8, 11, 3, 12,
+								      0, -1, 1, 16, 0, 12, 13, -1,
+								      12, 3, 17, 2, 13, -1, 1, 13,
+								      2, 10, 9, -1, 11, 8, 7, 15,
+								      4, -1, 15, 7, 19, 6, 14, -1,
+								      15, 14, 5, 18, 4, -1, 5, 14,
+								      6, 9, 10, -1, 3, 11, 4, 18,
+								      17, -1, 17, 18, 5, 10, 2, -1 ]
+						}
+					},
+					Shape {
+					    appearance
+						Appearance {
+						    material USE _v2%2
+						}
+					    geometry
+						IndexedLineSet {
+						    coord USE _v2%0
+						    coordIndex	[ 7, 8, -1, 8, 0, -1, 0, 16,
+								      -1, 16, 19, -1, 19, 7, -1, 16,
+								      1, -1, 1, 9, -1, 9, 6, -1,
+								      6, 19, -1, 8, 11, -1, 11, 3,
+								      -1, 3, 12, -1, 12, 0, -1, 12,
+								      13, -1, 13, 1, -1, 3, 17, -1,
+								      17, 2, -1, 2, 13, -1, 2, 10,
+								      -1, 10, 9, -1, 7, 15, -1, 15,
+								      4, -1, 4, 11, -1, 6, 14, -1,
+								      14, 15, -1, 14, 5, -1, 5, 18,
+								      -1, 18, 4, -1, 10, 5, -1, 18,
+								      17, -1 ]
+						}
+					}
+				    ]
+				}
+			    ]
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+

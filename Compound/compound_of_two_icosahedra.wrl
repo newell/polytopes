@@ -1,0 +1,157 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title	"compound of two icosahedra"
+    info	"Copyright (c) 2021 Newell Jensen. All rights reserved. Released under Apache 2.0 license as described in the file LICENSE."
+}
+Background {
+    skyColor	0.2 0.5 1
+}
+NavigationInfo {
+    type	[ "EXAMINE", "ANY" ]
+}
+Collision {
+    collide FALSE
+    children [
+	Group {
+	    children [
+		DirectionalLight {
+		    intensity	0.75
+		    direction	-1 -1 0
+		},
+		DirectionalLight {
+		    intensity	0.75
+		    direction	1 1 0
+		},
+		DEF icosahedron1 Group {
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					DEF _v2%1 Material {
+					    diffuseColor	1 0.1 0.1
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%0 Coordinate {
+					    point	[ 0 1 0,
+							      1 0 0,
+							      0 0 -1,
+							      -1 0 0,
+							      0 0 1,
+							      0 -1 0,
+							      0.38197 0.61803 0,
+							      -0.38197 0.61803 0,
+							      0 0.38197 -0.61803,
+							      0.61803 0 -0.38197,
+							      0 0.38197 0.61803,
+							      -0.61803 0 -0.38197,
+							      0.61803 0 0.38197,
+							      -0.61803 0 0.38197,
+							      0 -0.38197 -0.61803,
+							      0 -0.38197 0.61803,
+							      -0.38197 -0.61803 0,
+							      0.38197 -0.61803 0 ]
+					}
+				    solid	FALSE
+				    creaseAngle	0.5
+				    coordIndex	[ 6, 7, 8, -1, 7, 6, 10, -1,
+						      7, 11, 8, -1, 6, 8, 9, -1,
+						      6, 9, 12, -1, 6, 12, 10, -1,
+						      7, 10, 13, -1, 7, 13, 11, -1,
+						      8, 11, 14, -1, 8, 14, 9, -1,
+						      9, 14, 17, -1, 9, 17, 12, -1,
+						      10, 12, 15, -1, 10, 15, 13, -1,
+						      11, 13, 16, -1, 11, 16, 14, -1,
+						      12, 17, 15, -1, 13, 15, 16, -1,
+						      14, 16, 17, -1, 15, 17, 16, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					DEF _v2%2 Material {
+					    diffuseColor	0 0 0
+					}
+				}
+			    geometry
+				IndexedLineSet {
+				    coord USE _v2%0
+				    coordIndex	[ 6, 7, -1, 6, 8, -1, 6, 9,
+						      -1, 6, 10, -1, 6, 12, -1, 7,
+						      8, -1, 7, 10, -1, 7, 11, -1,
+						      7, 13, -1, 8, 9, -1, 8, 11,
+						      -1, 8, 14, -1, 9, 12, -1, 9,
+						      14, -1, 9, 17, -1, 10, 12, -1,
+						      10, 13, -1, 10, 15, -1, 11, 13,
+						      -1, 11, 14, -1, 11, 16, -1, 12,
+						      15, -1, 12, 17, -1, 13, 15, -1,
+						      13, 16, -1, 14, 16, -1, 14, 17,
+						      -1, 15, 16, -1, 15, 17, -1, 16,
+						      17, -1 ]
+				}
+			}
+		    ]
+		},
+		Transform {
+		    rotation	0 1 0  1.5708
+		    children [
+			Group {
+			    children [
+				Shape {
+				    appearance
+					Appearance {
+					    material USE _v2%1
+					}
+				    geometry
+					IndexedFaceSet {
+					    coord USE _v2%0
+					    solid	FALSE
+					    creaseAngle	0.5
+					    coordIndex	[ 6, 7, 8, -1, 7, 6, 10, -1,
+							      7, 11, 8, -1, 6, 8, 9, -1,
+							      6, 9, 12, -1, 6, 12, 10, -1,
+							      7, 10, 13, -1, 7, 13, 11, -1,
+							      8, 11, 14, -1, 8, 14, 9, -1,
+							      9, 14, 17, -1, 9, 17, 12, -1,
+							      10, 12, 15, -1, 10, 15, 13, -1,
+							      11, 13, 16, -1, 11, 16, 14, -1,
+							      12, 17, 15, -1, 13, 15, 16, -1,
+							      14, 16, 17, -1, 15, 17, 16, -1 ]
+					}
+				},
+				Shape {
+				    appearance
+					Appearance {
+					    material USE _v2%2
+					}
+				    geometry
+					IndexedLineSet {
+					    coord USE _v2%0
+					    coordIndex	[ 6, 7, -1, 6, 8, -1, 6, 9,
+							      -1, 6, 10, -1, 6, 12, -1, 7,
+							      8, -1, 7, 10, -1, 7, 11, -1,
+							      7, 13, -1, 8, 9, -1, 8, 11,
+							      -1, 8, 14, -1, 9, 12, -1, 9,
+							      14, -1, 9, 17, -1, 10, 12, -1,
+							      10, 13, -1, 10, 15, -1, 11, 13,
+							      -1, 11, 14, -1, 11, 16, -1, 12,
+							      15, -1, 12, 17, -1, 13, 15, -1,
+							      13, 16, -1, 14, 16, -1, 14, 17,
+							      -1, 15, 16, -1, 15, 17, -1, 16,
+							      17, -1 ]
+					}
+				}
+			    ]
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+
