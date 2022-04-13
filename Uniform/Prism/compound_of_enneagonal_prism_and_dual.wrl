@@ -1,0 +1,176 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+    title	"compound of enneagonal prism and dual"
+    info	"Freely distributable for noncommercial purposes."
+}
+Background {
+    skyColor	0.2 0.5 1
+}
+NavigationInfo {
+    type	[ "EXAMINE", "ANY" ]
+}
+Collision {
+    collide FALSE
+    children [
+	Group {
+	    children [
+		DirectionalLight {
+		    intensity	0.75
+		    direction	-0.5 -1 0
+		},
+		DirectionalLight {
+		    intensity	0.75
+		    direction	0.5 1 0
+		},
+		Group {
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.4 0.4 1
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%1 Coordinate {
+					    point	[ 0 0 1.05687,
+							      0.647231 0 0.835506,
+							      -0.0757117 0.642788 0.835506,
+							      -0.629518 -0.150384 0.835506,
+							      0.571519 0.642788 0.614139,
+							      1.00933 -0.150384 0.274987,
+							      -0.70523 0.492404 0.614139,
+							      -0.946764 -0.380785 0.274987,
+							      0.933617 0.492404 0.0536209,
+							      0.916864 -0.380785 -0.362411,
+							      -1.02248 0.262003 0.0536209,
+							      -0.803296 -0.583396 -0.362411,
+							      0.841152 0.262003 -0.583777,
+							      0.413101 -0.583396 -0.778443,
+							      -0.879008 0.0593912 -0.583777,
+							      -0.266243 -0.663414 -0.778443,
+							      0.337389 0.0593912 -0.99981,
+							      -0.341955 -0.0206263 -0.99981 ]
+					}
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 1, 4, 2, -1, 0, 2, 6,
+						      3, -1, 1, 5, 8, 4, -1, 3,
+						      6, 10, 7, -1, 5, 9, 12, 8,
+						      -1, 7, 10, 14, 11, -1, 9, 13,
+						      16, 12, -1, 11, 14, 17, 15, -1,
+						      13, 15, 17, 16, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.5 0.2 0.8
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord USE _v2%1
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 0, 3, 7, 11, 15, 13, 9, 5,
+						      1, -1, 2, 4, 8, 12, 16, 17,
+						      14, 10, 6, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0 0 0
+					}
+				}
+			    geometry
+				IndexedLineSet {
+				    coord USE _v2%1
+				    coordIndex	[ 0, 2, -1, 1, 4, -1, 3, 6,
+						      -1, 5, 8, -1, 7, 10, -1, 9,
+						      12, -1, 11, 14, -1, 13, 16, -1,
+						      15, 17, -1 ]
+				}
+			}
+		    ]
+		},
+		Group {
+		    children [
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0.9 0.3 0.3
+					    transparency	0.25
+					}
+				}
+			    geometry
+				IndexedFaceSet {
+				    coord
+					DEF _v2%2 Coordinate {
+					    point	[ 0.323616 0.36397 0.946189,
+							      -0.399327 0.278817 0.946189,
+							      0.323616 -2.74748 0.946189,
+							      0.895135 0.278817 0.503456,
+							      -0.323616 2.74748 -0.946189,
+							      -0.93542 0.0632028 0.503456,
+							      1.04781 0.0632028 -0.174849,
+							      -1.03382 -0.181985 -0.174849,
+							      0.710204 -0.181985 -0.77134,
+							      -0.648484 -0.34202 -0.77134,
+							      0.0402853 -0.34202 -1.00691 ]
+					}
+				    solid	FALSE
+				    convex	FALSE
+				    coordIndex	[ 2, 0, 1, -1, 2, 3, 0, -1,
+						      0, 4, 1, -1, 1, 5, 2, -1,
+						      0, 3, 4, -1, 3, 2, 6, -1,
+						      1, 4, 5, -1, 2, 5, 7, -1,
+						      3, 6, 4, -1, 2, 8, 6, -1,
+						      4, 7, 5, -1, 7, 9, 2, -1,
+						      4, 6, 8, -1, 8, 2, 10, -1,
+						      7, 4, 9, -1, 2, 9, 10, -1,
+						      8, 10, 4, -1, 4, 10, 9, -1 ]
+				}
+			},
+			Shape {
+			    appearance
+				Appearance {
+				    material
+					Material {
+					    diffuseColor	0 0 0
+					}
+				}
+			    geometry
+				IndexedLineSet {
+				    coord USE _v2%2
+				    coordIndex	[ 0, 1, -1, 0, 2, -1, 0, 3,
+						      -1, 0, 4, -1, 1, 2, -1, 1,
+						      4, -1, 1, 5, -1, 2, 3, -1,
+						      2, 5, -1, 2, 6, -1, 2, 7,
+						      -1, 2, 8, -1, 2, 9, -1, 2,
+						      10, -1, 3, 4, -1, 3, 6, -1,
+						      4, 5, -1, 4, 6, -1, 4, 7,
+						      -1, 4, 8, -1, 4, 9, -1, 4,
+						      10, -1, 5, 7, -1, 6, 8, -1,
+						      7, 9, -1, 8, 10, -1, 9, 10,
+						      -1 ]
+				}
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
+
